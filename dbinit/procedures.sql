@@ -18,6 +18,6 @@ create procedure spDeleteFlags()
 	begin
 		update `nationality`
 		set `nationality`.`flag` = NULL
-		where `nationality`.`flag` is not NULL
+		where `nationality`.`flag` is not NULL;
 	end$$
 delimiter ;

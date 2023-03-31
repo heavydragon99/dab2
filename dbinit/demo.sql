@@ -47,13 +47,7 @@ insert into `formula1`.`teams` (`calendarID`, `teamNumber`, `teamName`) values
 	(1, 1, "Team red"),
 	(2, 2, "Team blue");
 
-insert into `formula1`.`endposition` (`memberID`, `position`, `specialPositionID`) values
-	(1, 3, NULL),
-	(2, 2, NULL),
-	(3, 4, NULL),
-	(4, 1, NULL);
-
-insert into `formula1`.`fastestlap` (`memberID`) values (1), (2), (3), (4);
+insert into `formula1`.`fastestlap` (`memberID`) values (1), (1), (3), (4);
 
 insert into `formula1`.`membernationality` (`memberID`, `nationalityID`) values
 	(1, 1),
@@ -76,18 +70,29 @@ insert into `formula1`.`teamsmember` (`teamsID`, `memberID`) values
 insert into `formula1`.`race` (`raceDateID`, `raceNumber`, `fastestLapID`) values
 	(1, 1, 1),
 	(1, 2, 2),
-	(2, 1, 3),
-	(2, 2, 2),
-	(2, 3, 4),
-	(3, 1, 1),
-	(3, 2, 2),
-	(4, 1, 4),
-	(4, 2, 2);
-
-insert into `formula1`.`endpositionrace` (`endPositionID`, `raceID`) values
-	(1, 2),
-	(3, 4),
-	(4, 1),
-	(3, 2),
-	(3, 3);
+	(2, 3, 3),
+	(2, 4, 2),
+	(2, 5, 4),
+	(3, 6, 1),
+	(3, 7, 2),
+	(4, 8, 4),
+	(4, 9, 2);
+	
+insert into `formula1`.`endposition` (`memberID`, `raceID`, `position`, `specialPositionID`) values
+	(1, 1, 3, NULL),
+	(2, 1, 2, NULL),
+	(3, 1, 4, NULL),
+	(4, 1, 1, NULL),
+	(1, 2, 1, NULL),
+	(2, 2, 2, NULL),
+	(3, 2, 3, NULL),
+	(4, 2, 4, NULL),
+	(1, 3, 4, NULL),
+	(2, 3, 3, NULL),
+	(3, 3, 2, NULL),
+	(4, 3, 1, NULL),
+	(1, 4, 2, NULL),
+	(2, 4, 3, NULL),
+	(3, 4, 1, NULL),
+	(4, 4, 4, NULL);
 
